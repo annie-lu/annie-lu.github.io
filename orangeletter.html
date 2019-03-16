@@ -98,6 +98,10 @@ function shorter() {
     "use strict";
     return ' ' + choose(adjectives) + ' ' + choose(nouns) + '.';
 }
+function orange_shorter() {
+    "use strict";
+    return ' ' + choose(oj_adjectives) + ' ' + choose(oj_nouns) + '.';
+}
 function letter() {
     "use strict";
     var i, type, you_are = false, text = '';
@@ -113,7 +117,7 @@ function letter() {
                 text = text.slice(0, -1) + ': my' + shorter();
                 you_are = false;
             } else {
-                text = text + ' You are my' + shorter();
+                text = text + ' You are my' + oj_shorter();
                 you_are = true;
             }
         }
