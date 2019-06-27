@@ -14,7 +14,7 @@ title: Writing
           <td class="pv3 pr3 bb b--black-20"> <a href="{{ post.url }}" class="link black bg-animate hover-bg-washed-red underline" title="{{ post.title }}">{{ post.title }} </a></td>
           <td class="pv3 pr3 bb b--black-20 tr">{{ post.date | date_to_string }}</td>
         </tr>
-
+{% endfor %}
       </tbody>
     </table>
 </div>
