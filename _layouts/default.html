@@ -24,16 +24,23 @@
 		{% else %}
 	      		<br> <a href="project.html" class="dark-gray link bg-animate hover-bg-washed-red normal">Projects</a>
 		{% endif %}
-              <br> <a href="writing.html" class="dark-gray link bg-animate hover-bg-washed-red normal">Writing</a>
+	      	{% if page.title=="Writing" %}
+			<br> <a href="writing.html" class="dark-gray link bg-washed-red normal">Writing</a>
+		{% else %}
+	      		<br> <a href="writing.html" class="dark-gray link bg-animate hover-bg-washed-red normal">Writing</a>
+		{% endif %}
+	      
               <br> <a href="http://www.github.com/annie-lu" class="dark-gray link bg-animate hover-bg-washed-red normal">Github</a>
-              <br> <a href="art.html" class="dark-gray link bg-animate hover-bg-washed-red normal">Art</a>
+              {% if page.title=="Art" %}
+			<br> <a href="art.html" class="dark-gray link bg-washed-red normal">Art</a>
+		{% else %}
+	      		<br> <a href="art.html" class="dark-gray link bg-animate hover-bg-washed-red normal">Art</a>
+		{% endif %}
              <br>
       </h3>
     </p>
     </p>
     </div>
-
-    <div class="fl w-100 w-75-l pt4-l pr7-l pb5-l pv3-m ph5-m pa3">
 			{{ content }}
 
 			</div><!-- /.container -->
