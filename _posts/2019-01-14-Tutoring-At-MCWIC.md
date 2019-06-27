@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Tutoring at Maryland Center for Women in Computing"
 date: 2019-01-14
 ---
