@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+      <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Cousine">
+      <link rel="stylesheet" href="/css/main.css">
+		</head>
+		<body>
+      <div class="fl w-100 h-100 ph5-ns ph3 pv3">
+    <div class="fl w-100 w-25-l pv4 ph5">
+    <p class="tc-m">
+      <h3 class="measure-narrow f6 lh-copy center-ns">
+         <a href="https://annie-lu.github.io/index.html" class="link f5 dark-gray bg-animate hover-bg-washed-red b">Annie Lu</a>
+	      	{% if page.title=="About" %}
+			<br> <a href="https://annie-lu.github.io/index.html" class="dark-gray link bg-washed-red normal">About</a>
+		{% else %}
+	      		<br> <a href="https://annie-lu.github.io/index.html" class="dark-gray link bg-animate hover-bg-washed-red normal">About</a>
+		{% endif %}
+	      	{% if page.title=="Project" %}
+			<br> <a href="https://annie-lu.github.io/project.html" class="dark-gray link bg-washed-red normal">Projects</a>
+		{% else %}
+	      		<br> <a href="https://annie-lu.github.io/project.html" class="dark-gray link bg-animate hover-bg-washed-red normal">Projects</a>
+		{% endif %}
+	      	{% if page.title=="Writing" %}
+			<br> <a href="https://annie-lu.github.io/writing.html" class="dark-gray link bg-washed-red normal">Writing</a>
+		{% else %}
+	      		<br> <a href="https://annie-lu.github.io/writing.html" class="dark-gray link bg-animate hover-bg-washed-red normal">Writing</a>
+		{% endif %}
+	      
+              <br> <a href="http://www.github.com/annie-lu" class="dark-gray link bg-animate hover-bg-washed-red normal">Github</a>
+
+             <br><br>
+	      💻✨
+      </h3>
+    </p>
+    </p>
+    </div>
+			{{ content }}
+
+			</div><!-- /.container -->
+
+		</body>
+	</html>
